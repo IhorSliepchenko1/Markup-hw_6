@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgb(210 183 19);
+
+  @media (max-width: 800px) {
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+  }
+
+  &__a {
+    color: black;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: grey;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    gap: 10px;
+  }
+}
